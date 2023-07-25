@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="/images/projectlogo.png">
+</head>
+<body>
+    <div class="login_page_logo">
+        <img src="/images/projectlogo.png" alt="schoolpro-img">
+        <p>Welcome back! Enter your email and
+            password to sign in </p>
+    </div>
+        <!-- Login chamber -->
+    <form method="post">
+        <label for="login_type">Login as</label><br>
+        <select name="login_option" id="login_option">
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+        </select>
+        <br>
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" name="Enter your email">
+        <br>
+        <label for="password">Password</label> <br>
+        <input type="password" id="password" name="Enter your password" value="">
+        <br>
+        <input type="checkbox" id="login_checkbox" name="login_checkbox" value="login_checkbox">
+        <label for="login_checkbox">Keep me logged in</label>
+        <br>
+        <a target="_self" href="/Pages/forgot.html">Forgot password?</a>
+        <br>
+        <input type="submit" id="submit_signin" value="Sign In">
+    </form>
+    <!-- social media phase of the login page -->
+    <br>
+    <div class="login_socialhandle">
+        <button>
+            <a target="_self"><img src="/images/gmail.png">  Sign In with Google</a>
+        </button>
+        <br>
+        <button>
+            <a target="_self"><img src="/images/facebook.png"> Sign In With Facebook</a>
+        </button>
+    </div> 
+    <div class="no_account">
+        <p>Don't have an account? 
+            <a href="/Pages/signup.html"><strong >Sign Up</strong></a>
+        </p> 
+    </div>
+</body>
+</html>
