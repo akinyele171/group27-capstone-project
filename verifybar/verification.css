@@ -1,0 +1,43 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    /* height: 273px;
+    width: 309px; */
+    
+}
+
+.body {
+    width: 353px;
+    height: 600px;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.body>a {
+    margin-left: 289px;
+    color: rgba(2, 2, 2, 0.73);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* .reset-img1 {
+     background-image: url(/images/image\ 10.png);
+     margin-top: 30px; 
+    height: 285px;
+} */
+
+.otp_form {
+    display: grid;
+    padding-left: 60px;
+}
