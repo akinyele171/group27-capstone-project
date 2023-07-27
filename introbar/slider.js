@@ -14,3 +14,4 @@ function slider() {
     img.innerHTML = "<img src=" + slides[Start - 1] + ">"
 }
 setInterval(slider, 2000);
+

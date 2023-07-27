@@ -5,47 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <link rel="icon" href="/images/projectlogo.png">
+    <link rel="stylesheet" href="/signupbar/signup.css">
 </head>
 <body>
     <!-- back arrow is here -->
+    <div class="arrow">
+        <a target="_self" href="/loginbar/login.html">
+            <img src="/images/Arrow back.png">
+        </a>
+    </div>
     <div class="signup_page_logo">
         <img src="/images/projectlogo.png" alt="schoolpro-img">
     </div> 
+
+    <br>
     
     <!-- Sign Up form -->
     <form method="post">
-        <legend><strong>Sign Up</strong></legend>
+        <legend>Sign Up</legend>
         <br>
-        <input type="name" id="name" value="Name">
+            <input type="name" id="name"  placeholder="Name" required>
+        
+        <label for="email">
+            <input type="email" id="email" placeholder="E-mail" required>
+        </label>
+
+        <label for="create_password">
+            <input type="password" id="create_password" placeholder="Create Password" required>
+            <input type="password" id="create_password" placeholder="Confirm Password" required>
+        </label>
+        <div class="checkbox">
+            <input type="checkbox" id="login_checkbox" name="login_checkbox" value="login_checkbox">
+            <label for="login_checkbox" style="color: rgba(0, 138, 76, 1);">Remember me</label>
+        </div>
         <br>
-        <input type="email" id="email" value="E-mail">
-        <br>
-        <input type="password" id="create_password" value="Create Password">
-        <br>
-        <input type="password" id="create_password" value="Confirm Password">
-        <br>
-        <input type="checkbox" id="login_checkbox" name="login_checkbox" value="login_checkbox">
-        <label for="login_checkbox">Remember me</label>
-        <br>
-        <input type="submit" id="signup" value="Sign Up">
+        <input type="submit" id="signup" value="Sign up">
     </form>
-    
-    <br>
         <!-- Social handle phase of the signup page -->
-    <br>
     <div class="login_socialhandle">
         <button>
-            Continue with Google<a target="_self"><img src="/images/gmail.png"></a>
+            Continue with Google  <a target="_self"><img src="/images/gmail.png"></a>
         </button>
         <br>
         <button>
-            Continue With Facebook <a target="_self"><img src="/images/facebook.png"></a>
+            Continue with Facebook  <a target="_self">
+                <img src="/images/facebook.png">
+            </a>
         </button>
     </div> 
+    <!--Already registered can Log In -->
     <div class="have_account">
-        <p>Already Registered? 
-            <a href="/loginbar/login2.html"><strong >Log In</strong></a>
-        </p> 
+        <p>Already Registered? </p> 
+            <a href="/loginbar/login.html"><strong >Log In</strong></a>
     </div>
     
 </body>

@@ -10,20 +10,27 @@
 </head>
 <body>
     <!-- Back arrow is needed at the top -->
-    <div class="reset-img1">
+    <div class="arrow">
+        <a target="_self" href="/loginbar/login.html">
+            <img src="/images/Arrow back.png">
+        </a>
+    </div>
+    <div class="reset-img">
         <img src="/images/forgot-password-1.png" alt="reset password"><br>
     </div>
-    <div>
+    <div class="text">
         <h4>Forgot <br>Password?</h4>
         <br>
-        <p>Don't worry! It happens. Please enter the email associated with your account.</p>
+        <p>Don't worry! It happens. Please enter the <br> email associated with your account.</p>
     </div>
-    <form method="post">
-        <input type="email" id="forgot_pwd" name="Email" placeholder="E-mail" required>
-        <br>
-        <!--When submitted, it should be redirected to the OTP verication page-->
-        <input type="submit" id="submit" value="Submit">
-    </form>
+    <div class="retrieve">
+        <form method="post">
+            <input type="email" id="forgot_pwd" name="Email" placeholder="E-mail" required>
+            <br>
+            <!--When submitted, it should be redirected to the OTP verication page-->
+            <input type="submit" id="forgot_pwd" value="Submit">
+        </form>
+    </div>
     
 </body>
 </html>

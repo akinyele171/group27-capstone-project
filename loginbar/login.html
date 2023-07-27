@@ -13,19 +13,24 @@
     />
 </head>
 <body>
+    <!--Arrow back key-->
+    <div class="arrow">
+        <a target="_self" href="/introbar/walkthru.html">
+            <img src="/images/Arrow back.png">
+        </a>
+    </div>
    <!-- The schoolpro logo-->
     <div class="login_page_logo">
         <img src="/images/projectlogo.png" alt="schoolpro-img">
-        <p>Welcome back! Enter your email and
-            password to sign in </p>
+        <p>Welcome back! Enter your email and <br>password to sign in </p>
     </div>
         <!-- Login chamber  as a teacher or student-->
     <form method="post">
-        <label for="login_type">Login as</label><br>
-        <select name="login_option" id="login_option">
+        <h4>Login</h4>
+        <!-- <select name="login_option" id="login_option">
             <option value="teacher">Teacher</option>
             <option value="student">Student</option>
-        </select>
+        </select> -->
         <br>
         <label for="email">Email</label> 
         <br>
@@ -33,7 +38,8 @@
         <br>
         <label for="password">Password</label> <br>
         <input type="password" id="password" name="Enter your password" placeholder="Password" required>
-        <br>
+        <br> 
+        <!--checkbox and sign in button-->
         <div class="checkbox">
             <input type="checkbox" id="login_checkbox" name="login_checkbox">
             <label for="login_checkbox">Keep me logged in</label>
@@ -48,7 +54,7 @@
     <br>
     <div class="login_socialhandle">
         <button>
-            <a target="_self"><img src="/images/gmail.png">  Sign In with Google</a>
+            <a target="_self"><img src="/images/gmail.png"> Sign In with Google</a>
         </button>
         <br>
         <button>

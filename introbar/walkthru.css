@@ -1,134 +1,86 @@
-body {
-    width: 353px;
-    height: 600px;
-    border: 5px solid black;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
 }
 
-.div {
-    position: absolute;
-    top: calc(50% - 6px);
-    left: 30px;
-    line-height: 16px;
-    font-weight: 500;
-  }
-  .mobile-signal-icon {
-    position: absolute;
-    top: calc(50% - 1.5px);
-    right: 69px;
-    width: 18px;
-    height: 10px;
-  }
-  .battery-icon,
-  .wifi-icon {
-    position: absolute;
-    top: calc(50% - 3px);
-    right: 48.73px;
-    width: 15.27px;
-    height: 10.97px;
-  }
- 
-  .native-status-bar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 44px;
-  }
-  .native-home-indicator {
-    position: absolute;
-    width: calc(100% - 15px);
-    right: 7px;
-    bottom: 0;
-    left: 8px;
-    max-width: 100%;
-    overflow: hidden;
-    height: 34px;
-  }
-  .native-status-bar-parent {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0.06px;
-    left: -0.06px;
-    height: 844px;
-    color: var(--ink-darkest);
-  }
-  .image-2-icon {
-    position: absolute;
-    top: 199px;
-    left: 40.94px;
-    width: 308px;
-    height: 295px;
-    object-fit: cover;
-  }
-  .walkthru-screen1-child {
-    position: absolute;
-    top: 658px;
-    left: 176.94px;
-    width: 37px;
-    height: 9px;
-  }
-  .be-inspired-and,
-  .next {
-    position: absolute;
-    top: 677.98px;
-    left: 170.19px;
-  }
-  .be-inspired-and {
-    top: 566px;
-    left: 72.94px;
-    font-family: var(--font-roboto);
-    color: rgba(0, 0, 0, 0.87);
-  }
-  .next1 {
-    position: relative;
-  }
-  .next-wrapper,
-  .skip {
-    position: absolute;
-    cursor: pointer;
-  }
-  .next-wrapper {
-    top: 708px;
-    left: 71.94px;
-    border-radius: 10px;
-    background-color: #d95b56;
-    width: 247px;
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-  }
-  .skip {
-    top: 55px;
-    left: 322.94px;
-    font-size: 12px;
-    color: rgba(2, 2, 2, 0.73);
-  }
-  .online-library {
-    position: absolute;
-    top: 503px;
-    left: 114.94px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #008a4c;
-  }
-  .walkthru-screen1 {
-    position: relative;
-    background-color: var(--color-white);
-    width: 100%;
-    height: 844px;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--regular-none-medium-size);
-    color: var(--color-white);
-    font-family: var(--regular-none-medium);
-  }
+body {
+  width: 353px;
+  height: 600px;
+  border: 5px solid black;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.skip a {
+  color: #000000;
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  left: 28px;
+}
+
+.skip a p {
+  padding-left: 85%;
+  padding-top: 13px;
+}
+
+.slide img {
+  width: 65%;
+  height: 65%;
+  padding-left: 18%;
+  padding-top: 50px;
+}
+
+.slide h4 {
+  color: #008A4C;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+.slide p {
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 10px;
+}
+
+#next {
+  display: flex;
+  width: 220px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 12px;
+  background: #D95B56;
+}
+
+.submit {
+  padding-left: 20%;
+}
+
+.submit a {
+  color: #fff;
+  text-decoration: none;
+}
