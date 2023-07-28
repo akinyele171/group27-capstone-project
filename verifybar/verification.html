@@ -9,32 +9,31 @@
     <link rel="stylesheet" href="/verifybar/verification.css">
 </head>
 <body>
-    <div class="body">
-        <a target="_self" href="/loginbar/login.html">Skip</a>
+    <p id="skip"><a target="_self" href="/introbar/walkthru.html">Skip</a></p>
         <div class="reset-img1">
             <img width="309px" height="273px" src="/images/image 10.png" alt="OTP verification image">
-            <br>
-    
-    
-            
-        <!--Reset password-->
-        <div class="otp_form"> 
-            <h4>OTP Verification</h4>
-            <br> 
-            <form method="post">
-                <label for="otp">
-                <input type="text" id="otp" name="otp" value="">
-                <input type="text" id="otp" name="otp" value="">
-                <input type="text" id="otp" name="otp" value="">
-                <input type="text" id="otp" name="otp" value="">
-                <br>
-                
-                <a>resend OTP</a>
-                <br>
-                <input type="submit" id="otp" value="Verify">
-                </label>
-            </form>
         </div>
-    </div> 
+    <h4>OTP Verification</h4>
+            
+     <!--Reset password-->
+    <div class="otp_form"> 
+        <form method="post">
+            <label for="otp">
+            <input type="text" id="otp" name="otp" maxlength="1" required></span>
+            <input type="text" id="otp" name="otp" maxlength="1" required></span>
+            <input type="text" id="otp" name="otp" maxlength="1" required></span>
+            <input type="text" id="otp" name="otp" maxlength="1" required></span>
+            </label>       
+        </form>    
+    </div>
+    <div class="resend-otp">
+<!-- Note -->        <div class="timer"></div> <!--This is a 30 seconds countdown timer, ensure the functionalities)-->
+        <div class="resend-text">Resend OTP</div>
+    </div>
+    
+    <button id="verify">Verify</button>
+        
+
+    <script src="/verifybar/timer.js"></script>
 </body>
 </html>

@@ -6,22 +6,27 @@
     <meta http-equiv="refresh" content="30">
     <title>Reset password</title>
     <link rel="icon" href="/images/projectlogo.png">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/resetbar/reset.css">
 </head>
 <body>
-    <!-- Back arrow is needed at the top -->
+    <!-- Back arrow is at the top -->
+        <div class="arrow">
+            <a target="_self" href="/loginbar/login.html">
+                <img src="/images/Arrow back.png">
+            </a>
+        </div>
+    <!--the reset password image and text-->
     <div class="reset-img1">
         <img src="/images/reset-logo.jpg" alt="reset password"><br>
     </div>
-    <div>
+    <div class="text1">
         <h4>Reset <br>Password</h4>
+    </div>
         <br>
-        <!--Reset password-->
+        <!--Reset password form through email-->
     <form method="post">
-        <input type="email" id="reset_pwd" name="Email" value="Enter New Password">
-        <br>
-        <input type="email" id="reset_pwd" name="Email" value="Confirm New Password">
-        <br>
+        <input type="email" id="reset_pwd" name="Email" placeholder="Enter New Password" required>
+        <input type="email" id="reset_pwd" name="Email" placeholder="Confirm New Password" required>
         <input type="submit" id="reset" value="Submit">
     </form>
     

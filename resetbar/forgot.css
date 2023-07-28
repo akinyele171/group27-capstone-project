@@ -62,5 +62,25 @@ body {
     height: 98.37px;
     padding-top: 15px;
     gap: 10px;
+
 }
 
+.retrieve form .submit input {
+    border-radius: 10px;
+    background: #D95B56;
+    display: flex;
+    width: 310px;
+    height: 40.px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.retrieve form .input input {
+    width: 290px;
+    height: 40px;
+    border-radius: 7px;
+    background: #D8D8D8;
+    padding-left: 15px;
+}

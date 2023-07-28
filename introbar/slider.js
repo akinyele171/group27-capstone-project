@@ -1,17 +1,22 @@
-var img = document.getElementById('img');
+// const slider = document.querySelector('.container');
 
-var slides = ['image 3.png', 'image 5.png', 'image 2.png'];
+// const images = document.querySelectorAll('.slider');
 
-var Start = 0;
+// let counter = 1;
+// const intervalTime = 5000;
 
-function slider() {
-    if(Start < slides.length) {
-        Start = Start + 1;
-    } else {
-        Start = 1
-    }
-    console.log(img);
-    img.innerHTML = "<img src=" + slides[Start - 1] + ">"
-}
-setInterval(slider, 2000);
+// function slide() {
+//     slide.style.transiton = 'transform 1s ease-in-out';
+//     slide.style.transform = `translateX(${-counter * 100}%)`;
+//     counter++;
 
+//     if (counter >= images.length) {
+//         counter = 0;
+//         setTimeout(() => {
+//             slider.style.transition = 'none';
+//             slider.style.transform = 'translateX(0)';
+//         }, 1000)
+//     }
+// }
+
+// setInterval(slide, intervalTime);
