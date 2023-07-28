@@ -1,14 +1,14 @@
-var timeLeft = 30;
-var elem = document.getElementById('Timer');
+// var timeLeft = 30;
+// var elem = document.getElementById('Timer');
 
-var timerId = setInterval(countdown, 1000);
+// var timerId = setInterval(countdown, 1000);
 
-function countdown() {
-  if (timeLeft == 0) {
-    clearTimeout(timerId);
-    doSomething();
-  } else {
-    elem.innerHTML = timeLeft + 's';
-    timeLeft--;
-  }
-}
+// function countdown() {
+//   if (timeLeft == 0) {
+//     clearTimeout(timerId);
+//     doSomething();
+//   } else {
+//     elem.innerHTML = timeLeft + 's';
+//     timeLeft--;
+//   }
+// }
