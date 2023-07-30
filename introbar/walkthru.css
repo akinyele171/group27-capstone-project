@@ -54,6 +54,22 @@ body {
   padding-bottom: 20px;
 }
 
+.slider {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider section {
+  display: none;
+}
+
+.slider section:first-child {
+  display: block;
+}
+
 .dot {
   height: 15px;
   width: 15px;
